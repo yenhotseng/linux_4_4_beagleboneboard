@@ -25,7 +25,9 @@ $ sudo apt-get install libssl-dev // Building U-Boot requires libssl-dev to be i
 
 [Build u-boot]
 $ cd u-boot
+
 $ make sandbox_defconfig tools-only
+
 $ sudo install tools/mkimage /usr/local/bin
 
 [Compiling the BeagleBone Black Kernel]
