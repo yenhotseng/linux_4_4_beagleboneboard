@@ -17,7 +17,7 @@ $ git clone git://github.com/beagleboard/linux.git
 $ cd linux
 $ git checkout 4.4
 
-// Revised from VT-Buds /proc/config.gz
+// Modified from VT-Buds /proc/config.gz
 
 
 $ sudo apt-get install lzop // The Linux Kernel is compressed using lzo. Install the lzop parallel file compressor
