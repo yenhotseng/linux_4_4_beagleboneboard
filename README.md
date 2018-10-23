@@ -24,6 +24,7 @@ $ sudo apt-get install lzop // The Linux Kernel is compressed using lzo. Install
 $ sudo apt-get install libssl-dev // Building U-Boot requires libssl-dev to be installed
 
 [Build u-boot]
+
 $ cd u-boot
 
 $ make sandbox_defconfig tools-only
