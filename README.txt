@@ -49,7 +49,8 @@ $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- INSTALL_MOD_PATH=/home/cpeacock
 
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig
 
-In kernel hacking, enable
+CONFIG_DEBUG_KMEMLEAK in “Kernel hacking” has to be enabled. A kernel thread scans the memory every 10 minutes (by default) and prints the number of new unreferenced objects found. 
+
 • CONFIG_DEBUG_KMEMLEAK=y
 • CONFIG_DEBUG_KMEMLEAK_EARLY_LOG_SIZE=400
 
