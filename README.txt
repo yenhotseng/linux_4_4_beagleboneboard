@@ -45,5 +45,14 @@ And if you have your rootfs ready, you can install them:
 
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- INSTALL_MOD_PATH=/home/cpeacock/export/rootfs modules_install
 
-ref: https://wiki.beyondlogic.org/index.php/BeagleBoneBlack_Building_Kernel
+[Enable kmem debug]
 
+$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig
+
+In kernel hacking, enable
+• CONFIG_DEBUG_KMEMLEAK=y
+• CONFIG_DEBUG_KMEMLEAK_EARLY_LOG_SIZE=400
+
+
+ref: https://wiki.beyondlogic.org/index.php/BeagleBoneBlack_Building_Kernel
+ref: https://events.static.linuxfound.org/images/stories/pdf/lceu11_marinas.pdf
